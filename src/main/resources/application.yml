@@ -4,7 +4,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: your mongodd uri
+      uri: your mongodb uri
       database: savings-account-spring-boot
       
   application:
