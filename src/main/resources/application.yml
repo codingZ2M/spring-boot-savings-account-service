@@ -4,7 +4,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://codingz2m:d1YiOyjWh1qimx8L@cluster0.qqtuvzs.mongodb.net/?retryWrites=true&w=majority
+      uri: your mongodd uri
       database: savings-account-spring-boot
       
   application:
