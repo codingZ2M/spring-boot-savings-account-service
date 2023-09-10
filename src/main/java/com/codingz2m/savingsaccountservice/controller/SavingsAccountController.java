@@ -38,16 +38,6 @@ public class SavingsAccountController {
 
    @Autowired
 	ModelMapper modelMapper;
-	
-   @GetMapping("/")
-   public String home() {
-	   return "Accessing Savings Account REST API";
-   }
-   
-   @GetMapping("/secured")
-   public String secured() {
-	   return "Securely Accessing Savings Account REST API";
-   }
    
    @PostMapping
    public SavingsAccountDto save (@RequestBody SavingsAccountDto savingsAccountDto) {
