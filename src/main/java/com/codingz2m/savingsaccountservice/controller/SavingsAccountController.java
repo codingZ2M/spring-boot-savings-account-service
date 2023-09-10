@@ -39,6 +39,16 @@ public class SavingsAccountController {
    @Autowired
 	ModelMapper modelMapper;
 	
+   @GetMapping("/")
+   public String home() {
+	   return "Accessing Savings Account REST API";
+   }
+   
+   @GetMapping("/secured")
+   public String secured() {
+	   return "Securely Accessing Savings Account REST API";
+   }
+   
    @PostMapping
    public SavingsAccountDto save (@RequestBody SavingsAccountDto savingsAccountDto) {
 	
@@ -82,8 +92,8 @@ public class SavingsAccountController {
    }
    
    
-   //REST End Point: localhost:8081/savingsaccount?holderName=jhon
-   @GetMapping
+   //REST End Point: localhost:8081/savingsaccount/byHolderName?holderName=jhon
+   @GetMapping("/byHolderName")
    public List<SavingsAccountDto> getSavingsAccountStartsWith(@RequestParam("holderName") String holderName) throws SavingsAccountNotFoundException {
 	   
 	   logger.info("getSavingsAccountStartsWith() inside SavingsAccountController is executed");

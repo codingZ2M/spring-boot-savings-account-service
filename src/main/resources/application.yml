@@ -10,5 +10,14 @@ spring:
   application:
     name: Savings Account Service
 
-
-    
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: Iv1.3bca87430bf6c4ed
+            clientSecret: c9ab3b6b7fa89f9b8e782cff904ec1fe01d0c9bb
+          google:
+           clientId: 495698630053-q12hg0e0qlt255a1r72m3l3nruhc4vvj.apps.googleusercontent.com
+           clientSecret: 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
+          

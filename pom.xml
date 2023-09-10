@@ -5,18 +5,22 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.2</version>
+		<version>3.1.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.codingz2m</groupId>
 	<artifactId>savings-account-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>savings-account-service</name>
-	<description>Building Stand-Alone, Production-Grade Spring Based Spring Boot (3.0.0)  CRUD REST API with MongoDB Atlas (Multi-Cloud Database) - Accessing Data from MongoDB Document Database.</description>
+	<description>Building Stand-Alone, Production-Grade Spring Based Spring Boot (3.1.3)  CRUD REST API with MongoDB Atlas (Multi-Cloud Database) - Accessing Data from MongoDB Document Database.</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-oauth2-client</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
